@@ -6,9 +6,11 @@ let userLib = new Array();
 
 loadContent = (finalData) =>{
     if(mode===0){
+        document.getElementById('fltr-btn').style.display = "none";
         document.getElementById('search-bar').removeAttribute('class')
     }
     else{
+        document.getElementById('fltr-btn').style.display = "block";
         document.getElementById('search-bar').setAttribute('class','hide');
     }
     document.getElementById('movieList').innerHTML='';            
