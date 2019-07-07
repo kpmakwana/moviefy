@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel = "icon" href ='./img/logo.png' type = "image/x-icon"> 
+    <title>Rebel Movie App</title>
+</head>
+<body>
+    <header>
+			<div class="logo-container">
+				<img src="./img/logo.jpg" alt="logo" />
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href="https://github.com/kpmakwana" target="blank">Git</a></li>
+					<li><a class="nav-link" href="https://www.linkedin.com/in/kpmakwana/" target="blank">LinkedIn</a></li>
+					<li><a  href="mailto:makwana.kaushik98@gmail.com">Contact</a></li>
+				</ul>
+			</nav>
+    </header>
+    <main>
+        <div class="button-bar" >
+            <button class="my-btn" id='lib-btn' onClick="modeChange(this.id)" >My library</button>
+            <button class="my-btn" id='search-btn' onclick="modeChange(this.id)" >Search and add new movies</button>
+            <select class="fltr" id='fltr-btn' onchange="sortList(this.value)">
+                    <option value="default">Sort by</option>
+                    <option value="name">Name</option>
+                    <option value="year">Year</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" oninput="search()" id='search-bar'
+            placeholder="Search keywords"></input>
+        </div>
+        <div class="movie-wrapper" id="movieList">
+                    
+                
+                        
+        </div>
+    </main>
+
+<script src="./main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,159 @@
+body{
+background-color: aliceblue;
+margin: 0%;
+}
+
+header{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    box-shadow: 10px -15px 40px grey;
+}
+
+.logo-container,
+.nav-links{
+    display: flex;
+}
+.logo-container{
+    margin: 10px 20px;
+    flex: 1;
+    cursor:pointer;
+}
+nav{
+    flex: 1;
+}
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link {
+	color: #5f5f79;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+main{
+    padding: 30px;
+}
+.my-btn{
+    background-color: white;
+    border: 2px solid cadetblue;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 8px;
+    margin: 1% 1% 0% 0%;
+  }
+  .fltr{
+    float: right;
+    margin: 1% 1% 0% 0%;
+    padding: 15px 32px;
+    border: 2px solid cadetblue;
+  }
+
+.my-btn:hover, .fltr:hover,.add-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+input{
+    background: transparent;
+    text-align: center;
+    margin: 20px 9%;
+    font-size: 16px;
+    width: 80%;
+    height: 20px;
+    border-width: 0px;
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+input:focus,.my-btn:focus,.fltr:focus,.add-button:focus{
+    outline: none;
+}
+.movie-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0%;
+    list-style: none;
+    justify-content: space-around;
+}
+.flex-item {
+    background: #a1caf1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 29px 10px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: min-content;
+    max-height: min-content;
+    min-width: 300px;
+    min-height: 450px;
+}
+.flex-item:hover{
+    cursor: pointer;
+    box-shadow: 0 12px 40px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.flex-item:hover img{
+opacity: 0.4;
+}
+.flex-item:hover button{
+    display: block;
+}
+img{
+    border-radius: 5px;
+}
+.movie-item{
+    margin: 0px;
+    padding: 0px
+}
+.movi-details{
+    color: black;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: row;
+}
+.movie-name,.movie-year{
+    flex: 1;
+    margin-top: 10px;
+}
+.add-button{
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 7px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 190px 60px 0px 70px;
+    justify-content: center;
+    display: none;
+
+}
+.hide{
+    display: none !important;
+}
+.emptyLib{
+    text-align: center;
+    font-size: 30px;
+    margin: 100px;
+}
+@media only screen and (max-width: 620px) {
+.nav-link{
+    display: none;
+}
+.button-bar{
+    display: grid;
+}
+
+}
